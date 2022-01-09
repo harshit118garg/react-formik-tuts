@@ -1,0 +1,106 @@
+.App {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputgrp {
+  margin-bottom: 2rem;
+}
+
+label {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 5px;
+  color: var(--text-color-2);
+  text-transform: uppercase;
+  font-family: var(--font-2);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  letter-spacing: var(--spacing);
+  display: block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: var(--font-4);
+  color: var(--text-color-2);
+  background-color: var(--bg-color-1);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+}
+
+input[type="number"] {
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  width: 400px;
+  padding: 6px 12px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: var(--font-4);
+  color: var(--text-color-2);
+  background-color: var(--bg-color-1);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 800;
+  text-align: right;
+}
+
+.error {
+  color: navy;
+  font-weight: 900;
+  text-align: left;
+}
+
+.btns {
+  font-family: var(--font-3);
+  border: none;
+  background-color: var(--bg-color-3);
+  transition: var(--transition);
+  font-weight: 700;
+  margin: 0.5rem 1rem;
+}
+
+.btns:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--bg-color-3);
+}
+
+.btnSubmit {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--font-3);
+  border: none;
+  background-color: var(--bg-color-3);
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.btnSubmit:hover {
+  padding: 0.3rem;
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--bg-color-3);
+}
+
+@media screen and (max-width: 800px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 256px;
+  }
+  input[type="number"] {
+    width: 200px;
+  }
+}
